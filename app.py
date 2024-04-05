@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 Education = [  {
                 'id':1,
-                'name': 'Bachelor of Engineering',
+                'name': 'Bachelors of Engineering',
                 'branch': 'Electronics and Telecommunication',
                 'Honours': 'Data Science',
                 'year': '2019-2023',
@@ -13,9 +13,9 @@ Education = [  {
              {
                'id':2,
                'name': 'Higher Secondary School Certificate (12th)',
-               'branch': 'Science Branch',
+               'branch': 'Science',
                'year': '2017-2019',
-               'university': 'Marathwada,Aurangabad'
+               'university': 'Marathwada, Aurangabad'
              },
              {
                'id':3,

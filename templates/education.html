@@ -1,0 +1,30 @@
+<div>
+    <div ><b>
+    {{ i['name'] }}
+    </b></div>
+    <div>
+    {% if 'branch' in i %} 
+    <b>Branch:</b> {{ i['branch'] }}
+    {% endif %}
+      </div>
+    <div>
+    {% if 'Honours' in i %} 
+    <b>Honours:</b> {{ i['Honours'] }}
+    {% endif %}
+      </div>
+    <div>
+    {% if 'year' in i %}
+    <b>Year:</b> {{ i['year'] }}
+    {% endif %}
+      </div>
+    <div>
+    {% if 'marks' in i %}
+    <b>Marks:</b> {{ i['marks'] }}
+    {% endif %}
+      </div>
+    <div>
+    {% if 'university' in i %}
+    <b>University</b> : {{ i['university'] }}
+    {% endif %}
+      </div>
+</div>

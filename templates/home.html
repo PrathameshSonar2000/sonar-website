@@ -59,10 +59,13 @@
           <br>💻 Open to exciting opportunities in the field of data analytics, I'm eager to collaborate, learn, and contribute to innovative projects. Let's connect and create data-driven solutions together! 🤝</p>
         
         <h2>Education</h2>
-        <p>
-          {{education}}
-        </p>
-        <p>my acadamic data</p>
+          <div>
+           
+            {% for i in education %}
+             {% include 'education.html' %}
+            {% endfor %}
+          </div>
+        <h2>Projects :</h2>
           <div style="text-align:center">
           <button class="btn btn-success" "id='contactme' >Contact me</button>
           </div> 
