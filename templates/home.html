@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Prathamesh Sonar Portfolio</title>
     <style>
    h1 {
@@ -11,7 +13,7 @@
      text-align: center;
    }
   #pic {
-    width: 1500px;
+    width: 100%;
     height: 300px;
 
   }
@@ -29,8 +31,8 @@
     color: rgb(80,80,80);
   }
   #container{
-    max-width:1500px;
-    margin: 0 200 0 200;
+    max-width:100%;
+    margin: 0 auto 0 auto;
     
   }
 
@@ -48,7 +50,7 @@
         
         <h2>About me</h2>
         
-        <p >👋 Hello, I'm Prathamesh Sonar! I'm an ETC engineer with an honors degree in data science. Passionate about leveraging data to uncover meaningful insights, I specialize in data analytics. <br>💡 My goal is to utilize my skills to drive data-driven decision making and solve complex problems.
+        <p style="margin:0 300 0 300">👋 Hello, I'm Prathamesh Sonar! I'm an ETC engineer with an honors degree in data science. Passionate about leveraging data to uncover meaningful insights, I specialize in data analytics. <br>💡 My goal is to utilize my skills to drive data-driven decision making and solve complex problems.
     
         <br>⚙️ In addition to my technical expertise, I'm also a sports enthusiast, was the vice captain of my cricket team. <br>🏏 I believe that teamwork and perseverance are vital both on and off the field.
     
@@ -58,14 +60,11 @@
         
         <h2>Education</h2>
         <p>
-          •	BE in Electronics and Telecommunication Engineering and Honours in Data Science from SPPU (2019-23)– 8.1 CGPA
-          <br>•	HSC from Maharashtra State Board, Marathwada (2017-2019)
-          <br>•	SSC from CBSC Board -K.V. (2017)
-
+          {{education}}
         </p>
         <p>my acadamic data</p>
           <div style="text-align:center">
-          <button id='contactme' >Contact me</button>
+          <button class="btn btn-success" "id='contactme' >Contact me</button>
           </div> 
         </div>
   </body>
