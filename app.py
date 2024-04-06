@@ -8,6 +8,7 @@ Education = [  {
                 'branch': 'Electronics and Telecommunication',
                 'Honours': 'Data Science',
                 'year': '2019-2023',
+                'mark': '8.1 CGPA',
                 'university': 'SPPU'
               },
              {
@@ -15,12 +16,14 @@ Education = [  {
                'name': 'Higher Secondary School Certificate (12th)',
                'branch': 'Science',
                'year': '2017-2019',
+               'mark': '60%',
                'university': 'Marathwada, Aurangabad'
              },
              {
                'id':3,
                'name': 'Secondary School Certificate (10th)',
                'year': '2006-2016',
+               'mark': '9.8 CGPA',
                'university': 'CBSE'
              }
             ]
