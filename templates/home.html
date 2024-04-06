@@ -1,109 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Example</title>
-    <link           
- href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
- rel="stylesheet">
-
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Prathamesh Sonar Portfolio</title>
     <style>
-   h1 {
-     font-size: 40px;
-     font-family: Roboto;
-     font-weight: normal;
-     color: rgb(100,100,0);
-     text-align: center;
-     
-   }
-  #pic {
-    width: 100%;
-    height: 300px;
-
-  }
-  h2{
-    font-size: 30px;
-    font-weigth:normal;
-    font-family: Roboto;
-    color: rgb(32,100,180);
-    text-align : center;
-  }
-  p{
-    font-size:20px;
-    font-weight: normal;
-    font-family: cursive;
-    color: rgb(80,80,80);
-  }
-  #container{
-    max-width:100%;
-    margin: 0 auto 0 auto;
-    
-  }
-  .education-details{
-    color: rgb(50,80,80);
-  }
-
-      
+        h1 {
+            font-size: 40px;
+            font-family: Roboto;
+            font-weight: normal;
+            color: rgb(100,100,0);
+            text-align: center;
+        }
+        #pic {
+            width: 100%;
+            height: auto; /* Ensures image height adjusts proportionally to width */
+            max-height: 300px; /* Sets a maximum height for the image */
+            display: block; /* Centers the image horizontally */
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            font-family: Roboto;
+            color: rgb(32,100,180);
+            text-align: center;
+            border-bottom: 1px dotted gray;
+            margin-top: 20px; /* Add margin at the top of each heading */
+            margin-bottom: 20px; /* Add margin at the bottom of each heading */
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
+            font-family: cursive;
+            color: rgb(80,80,80);
+        }
+        .education-details {
+            color: rgb(50,80,80);
+        }
     </style>
-  </head>
-
-  
-  <body>
-    <div id='container'>
-          
-      <h1 class="mt-5 mb-3 ">Prathamesh sonar</h1>
-        
-        <img class="mt-3 mb-3 " id='pic' src="https://367ffd0c-d2c7-4e9e-b06b-e5986c5c590d-00-ru1k46omselq.pike.replit.dev/static/pic2.jpeg" >
-        
-        <h2 class="mt-3 mb-3 ">About me</h2>
-        
-        <p style="margin:0 300px 0 300px">👋 Hello, I'm Prathamesh Sonar! I'm an ETC engineer with an honors degree in data science. Passionate about leveraging data to uncover meaningful insights, I specialize in data analytics. <br>💡 My goal is to utilize my skills to drive data-driven decision making and solve complex problems.
-    
-        <br>⚙️ In addition to my technical expertise, I'm also a sports enthusiast, was the vice captain of my cricket team. <br>🏏 I believe that teamwork and perseverance are vital both on and off the field.
-    
-          <br>🌟 When I'm not diving into data or playing cricket, you can find me exploring the world of anime and learning the beautiful Japanese language. 🎌 I'm fascinated by the rich storytelling and cultural aspects that anime offers.
-    
-          <br>💻 Open to exciting opportunities in the field of data analytics, I'm eager to collaborate, learn, and contribute to innovative projects. Let's connect and create data-driven solutions together! 🤝</p>
-        
-        <h2 class="mt-3 mb-3" style="border-bottom : 1px dotted gray" >Education</h2>
-          <div style="margin:0 300px 0 300px;">
-           
+</head>
+<body>
+    <div class="container"> <!-- Add a container to wrap all content -->
+        <h1 class="mt-5 mb-3">Prathamesh sonar</h1>
+        <img id="pic" src="https://367ffd0c-d2c7-4e9e-b06b-e5986c5c590d-00-ru1k46omselq.pike.replit.dev/static/pic2.jpeg" class="mb-3">
+        <h2>About me</h2>
+        <p class="mx-3">👋 Hello, I'm Prathamesh Sonar! I'm an ETC engineer with an honors degree in data science. Passionate about leveraging data to uncover meaningful insights, I specialize in data analytics. <br>💡 My goal is to utilize my skills to drive data-driven decision making and solve complex problems. <br>⚙️ In addition to my technical expertise, I'm also a sports enthusiast, was the vice captain of my cricket team. <br>🏏 I believe that teamwork and perseverance are vital both on and off the field. <br>🌟 When I'm not diving into data or playing cricket, you can find me exploring the world of anime and learning the beautiful Japanese language. 🎌 I'm fascinated by the rich storytelling and cultural aspects that anime offers. <br>💻 Open to exciting opportunities in the field of data analytics, I'm eager to collaborate, learn, and contribute to innovative projects. Let's connect and create data-driven solutions together! 🤝</p>
+        <h2>Education</h2>
+        <div class="row mx-3"> <!-- Add a row to contain education details -->
             {% for i in education %}
-            <div style="margin-bottom:20px;">
-             {% include 'education.html' %}
+            <div class="col-12 mb-3">
+                {% include 'education.html' %}
             </div>
             {% endfor %}
-          </div>
-        <h2>Projects :</h2>
-            <div style="margin:0 300px 0 300px;">
-              {% for i in project %}
-                <div style="margin-bottom:20px;">
-                  <div>
-                 <b style="color:rgb(225,0,0)"> * Project name : </b>{{i['name']}}
-                    </div>
-                  <div>
-                    * Project Tools : {{i['tools']}}
-                      </div>
-                  <div>
-                  * Project description : {{i['description']}}
-                    </div>
-                  <div>
-                  * Project link : {{i['link']}}
-                  </div>
-                </div>
-              
-              {% endfor %}
-              
-            </div>
-
-
-
-      
-          <div style="text-align:center">
-          <button class="btn btn-success" "id='contactme' >Contact me</button>
-          </div> 
         </div>
-  </body>
+        <h2>Projects</h2>
+        <div class="row mx-3"> <!-- Add a row to contain project details -->
+            {% for i in project %}
+            <div class="col-12 mb-3">
+                <div>
+                    <b style="color:rgb(225,0,0)"> * Project name: </b>{{i['name']}}
+                </div>
+                <div>
+                    * Project Tools: {{i['tools']}}
+                </div>
+                <div>
+                    * Project description: {{i['description']}}
+                </div>
+                <div>
+                    * Project link: {{i['link']}}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center"> <!-- Center align the button -->
+            <button class="btn btn-success mb-5" id="contactme">Contact me</button>
+        </div>
+    </div>
+</body>
 </html>
