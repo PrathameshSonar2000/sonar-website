@@ -27,10 +27,35 @@ Education = [  {
                'university': 'CBSE'
              }
             ]
+Project = [{
+          'id' : 1,
+          'name': 'Airlines reviews',
+          'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
+          'description': 'A website for airlines to review their flights',
+          'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+           },
+          {
+             'id' : 2,
+             'name': 'Band gap prediction',
+             'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
+             'description': 'A website for airlines to review their flights',
+             'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+           },
+          {
+             'id' : 3,
+             'name': 'Indian Covid-19',
+             'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
+             'description': 'A website for airlines to review their flights',
+             'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+          }
+           
+          
+          
+          ] 
 
 @app.route("/")
 def hello():
-    return render_template('home.html',education=Education)
+    return render_template('home.html',education=Education, project=Project)
 
 print(__name__)
 if __name__ == "__main__":
