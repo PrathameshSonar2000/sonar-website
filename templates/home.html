@@ -49,7 +49,7 @@
         <h2>About me</h2>
         <p class="mx-3">👋 Hello, I'm Prathamesh Sonar! I'm an ETC engineer with an honors degree in data science. Passionate about leveraging data to uncover meaningful insights, I specialize in data analytics. <br>💡 My goal is to utilize my skills to drive data-driven decision making and solve complex problems. <br>⚙️ In addition to my technical expertise, I'm also a sports enthusiast, was the vice captain of my cricket team. <br>🏏 I believe that teamwork and perseverance are vital both on and off the field. <br>🌟 When I'm not diving into data or playing cricket, you can find me exploring the world of anime and learning the beautiful Japanese language. 🎌 I'm fascinated by the rich storytelling and cultural aspects that anime offers. <br>💻 Open to exciting opportunities in the field of data analytics, I'm eager to collaborate, learn, and contribute to innovative projects. Let's connect and create data-driven solutions together! 🤝</p>
         <h2>Education</h2>
-        <div class="row mx-3"> <!-- Add a row to contain education details -->
+        <div > <!-- Add a row to contain education details -->
             {% for i in education %}
             <div class="col-12 mb-3">
                 {% include 'education.html' %}
@@ -57,22 +57,11 @@
             {% endfor %}
         </div>
         <h2>Projects</h2>
-        <div class="row mx-3"> <!-- Add a row to contain project details -->
+        <div> <!-- Add a row to contain project details -->
             {% for i in project %}
-            <div class="col-12 mb-3">
-                <div>
-                    <b style="color:rgb(225,0,0)"> * Project name: </b>{{i['name']}}
-                </div>
-                <div>
-                    * Project Tools: {{i['tools']}}
-                </div>
-                <div>
-                    * Project description: {{i['description']}}
-                </div>
-                <div>
-                    * Project link: {{i['link']}}
-                </div>
-            </div>
+              <div class='col-12 mb-3'>
+                {% include 'projects.html' %}
+              </div>
             {% endfor %}
         </div>
         <div class="text-center"> <!-- Center align the button -->

@@ -30,9 +30,9 @@ Education = [  {
 Project = [{
           'id' : 1,
           'name': 'Airlines reviews',
-          'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
-          'description': 'A website for airlines to review their flights',
-          'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+          'tools': 'Pandas for preprocessing , matplotlib and seaborn for Visual Analysis , Spacy for preprocessing , Spacy for Word Embedding , KNN for ML classification.',
+          'description': 'We will analyse reviews of an Airlines and by using NLP we will build a ML model to predict the ratings based on the reviews.',
+          'link': 'https://github.com/PrathameshSonar2000/Airlines_reviews.git'
            },
           {
              'id' : 2,
@@ -44,7 +44,7 @@ Project = [{
           {
              'id' : 3,
              'name': 'Indian Covid-19',
-             'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
+             'tools': 'Python, Pandas, Numpy, Matplotlib, Seaborn',
              'description': 'A website for airlines to review their flights',
              'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
           }
