@@ -37,20 +37,17 @@ Project = [{
           {
              'id' : 2,
              'name': 'Band gap prediction',
-             'tools': 'HTML, CSS, Bootstrap, JavaScript, Flask, Heroku',
-             'description': 'A website for airlines to review their flights',
-             'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+             'tools': 'Pandas for data preprocessing,feature selection, sklearn for feature scaling ,rdkit (use for chemical formulas to get array of equation of polymer)',
+             'description': 'A prediction model using Ridge regression machine learning to predict the band gap of polymers.',
+             'link': 'https://github.com/PrathameshSonar2000/Band_gap-prediction-using-machine-learning.git'
            },
           {
              'id' : 3,
              'name': 'Indian Covid-19',
              'tools': 'Python, Pandas, Numpy, Matplotlib, Seaborn',
-             'description': 'A website for airlines to review their flights',
-             'link': 'https://github.com/Ayush-Kumar-Singh/Airlines_reviews'
+             'description': 'Exploratory Data Analysis on Indian Covid-19 data by using Jupiter Notebook using Python language used libraries such as pandas, matplotlib ,seaborn and A Dashboard using Power bi.',
+             'link': 'https://github.com/PrathameshSonar2000/Indian_covid_19_data-exploratory-data-analysis-.git'
           }
-           
-          
-          
           ] 
 
 @app.route("/")
