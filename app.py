@@ -1,4 +1,4 @@
-from flask import Flask, render_template 
+from flask import Flask, render_template , jsonify
 
 app = Flask(__name__)
 
@@ -53,6 +53,10 @@ Project = [{
 @app.route("/")
 def hello():
     return render_template('home.html',education=Education, project=Project)
+
+@app.route("/api/education")
+def list_education():
+  return jsonify(Education)
 
 print(__name__)
 if __name__ == "__main__":
